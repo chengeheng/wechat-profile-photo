@@ -1,0 +1,18 @@
+<!-- index.wxml -->
+<view class="container">
+    <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+            点击获取头像
+        </button>
+        <block wx:else>
+            <canvas canvas-id="myCanvas" style="width:300px;height:300px;" />
+            <view class="userinfo-buttons">
+                <button bindtap="addNationalFlag" class="userinfo-button">国旗</button>
+                <button bindtap="addChristmas" class="userinfo-button">圣诞小鹿</button>
+            </view>
+            <view class="userinfo-buttons">
+                <button bindtap="saveToAlbum" class="save-button">保存到本地相册</button>
+            </view>
+        </block>
+    </view>
+</view>

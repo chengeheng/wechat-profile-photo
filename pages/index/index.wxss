@@ -1,0 +1,16 @@
+/**index.wxss**/
+.userinfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.userinfo-buttons {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	padding: 10rpx 20rpx;
+	margin-top: 30rpx;
+}
